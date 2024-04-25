@@ -1,0 +1,249 @@
+/*
+ * CSS do site "André Lanches"
+ */
+
+/* Seleciona o corpo da página */
+body {
+
+    background-color: #352e1c;
+    font-family: Candara, Helvetica, sans-serif;    
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column; 
+    height: 500px;
+    background-image: url(../images/pexels-jonathan-borba-2983101.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+/** Seleciona a div que armazenará os elementos de logo (imagem
+e texto do logo do site) **/
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 15px;
+    color: #e50021;
+}
+
+/* itens do menu */ 
+.barra-menu {
+    display: flex;
+    justify-content: center;
+    background-color: #e50022c2;
+}
+
+/* menu hamburguer */
+i#burguer {
+    display: none;
+}
+ /* fechar menu */
+i#closeMenu {
+    display: none;
+}
+
+.listaMenu li {
+    display: inline-block;
+}
+
+/** Seleciona todos os links dentro de listas que estão dentro de
+elementos com a classe "listaMenu" **/
+.listaMenu li a {
+    text-decoration: none;
+    height: 50px;
+    line-height: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/** Seleciona elementos de link dentro de listas com a calsse
+"listaMenu" quando estão em estado normal e quando estão
+já visitados **/
+.listaMenu li a:link,
+.listaMenu li a:visited {
+
+    color: white;
+}
+
+/** Seleciona elementos de link dentro de listas com a calsse
+"listaMenu" quando estão com o mouse apontado **/
+.listaMenu li a:hover {
+
+    color: #e50021;
+    background-color: white;
+}
+
+/** Seleciona os elementos com o id "menuAtual" quando em estado
+normal e já visitados **/
+#menuAtual:link,
+#menuAtual:visited {
+    font-weight: bold;
+}
+
+.sobreNos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 700px;
+}
+
+.texto h1 {
+    text-align: center;
+}
+
+.texto p {
+    margin: 10px;
+}
+
+#content {
+    display: none;
+}
+
+/** Selecionamos a div principal, que irá armazenar todo o conteúdo
+principal do site **/
+.content-menu {
+    display: flex;
+    flex-direction: column; /* Adiciona flex-direction para alinhar os elementos verticalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    align-items: center; /* Centraliza horizontalmente */
+    width: 700px;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    left: 50%;
+    margin-top: 45px;
+    transform: translateX(-50%); /* Utiliza transform para ajustar a posição horizontalmente */
+}
+
+#tituloConteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas com larguras iguais */
+    gap: 20px; /* Adiciona espaçamento entre as células do grid */
+}
+
+.item-produto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.imagemProduto {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    /* Define a transição de transformação */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tituloProduto, .precoProduto {
+    font-weight: bold;
+    margin-top: 10px; /* Adiciona margem superior para espaçamento */
+}
+
+.precoProduto, i {
+    cursor: pointer;
+}
+
+.bebidas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Define duas colunas com larguras iguais */
+    gap: 20px;
+}
+
+#back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    padding: 10px 20px;
+    background-color: #b91b1b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 20px;
+}
+
+.localizacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loc {
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    color: #e50021;
+}
+
+iframe {
+    justify-content: center;
+    margin-top: 25px;
+    width: 700px;
+    height: 400px;
+}
+
+.carrinho {
+    cursor: pointer;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e50021;
+    color: white;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    margin-top: 45px;
+}
+
+.redes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+.redes a i {
+    color: white;
+}
+
+.redes a.insta:hover i{
+    color: #3f729b;
+}
+
+.redes a.face:hover i{
+    color: blue;
+}
+
+.redes a.whats:hover i{
+    color: green;
+}

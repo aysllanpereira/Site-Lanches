@@ -1,0 +1,74 @@
+@media screen and (min-width: 200px) and (max-width: 600px){
+    body {
+        overflow-x: hidden;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        font-size: 13px;
+    }
+
+    .barra-menu li, a {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    i#burguer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 10px;
+        font-size: 3rem;
+    }
+
+    .listaMenu {
+        display: none;
+        margin-top: 55px;
+        
+    }
+
+    .content-menu {
+        width: 400px;
+    }
+
+    i#closeMenu{
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 25px;
+        color: white;
+        font-size: 2.5rem;
+    }
+    
+    #itens.open {
+        display: block;
+    }
+
+    #closeMenu.open {
+        display: block;
+    }
+
+    .produtos img {
+        width: 140px;
+    }
+
+    .item-produto p {
+        font-size: 10px;
+        margin: 8px;
+    }
+
+    .bebidas img {
+        width: 140px;
+    }
+
+    #back-to-top {
+        right: 25px;
+    }
+
+    iframe {
+        width: 400px;
+    }
+
+}    
